@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{color-scheme:dark;--bg:#090b0d;--panel:#121619;--line:#242b2e;--muted:#879196;--text:#f3f5f2;--lime:#c8f169}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:Manrope,Arial,sans-serif}
+body{background:radial-gradient(ellipse at 50% -20%,#1d2924 0,transparent 48%),var(--bg)}
+button{font:inherit}.shell{width:min(100% - 32px,520px);margin:0 auto;padding:26px 0 30px}
+.topbar,.brand,.network,.card-head,.section-title,.asset-row,.address,footer{display:flex;align-items:center;justify-content:space-between}
+.brand{justify-content:flex-start;gap:10px;font-weight:800;letter-spacing:-.5px}.brand-mark{display:grid;place-items:center;width:31px;height:31px;border-radius:10px;background:var(--lime);color:#10150b;font-size:19px}
+.network,.eyebrow,.section-title span,footer,.live-pill{font:10px 'DM Mono',monospace;letter-spacing:1.1px;color:var(--muted)}
+.network i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--lime);margin-right:7px;box-shadow:0 0 12px #c8f16988}
+.hero{padding:48px 2px 25px}.eyebrow{color:var(--lime);margin:0 0 12px}.hero h1{font-size:clamp(38px,10vw,54px);letter-spacing:-3px;line-height:1.02;margin:0;font-weight:800}.hero h1 em{font-style:normal;color:var(--lime)}.sub{color:var(--muted);font-size:13px;line-height:1.6;max-width:310px;margin:14px 0 0}
+.balance-card{padding:22px;border:1px solid #354137;border-radius:22px;background:linear-gradient(145deg,#1c2721,#111719 72%);box-shadow:0 18px 55px #0005}
+.card-head{font-size:12px;color:#b5bfba}.live-pill{font-size:9px;color:var(--lime);letter-spacing:.6px}.balance{font-size:48px;font-weight:700;letter-spacing:-2.8px;margin:24px 0 2px}.balance small{font:11px 'DM Mono',monospace;color:var(--muted);letter-spacing:0}.balance-note{font-size:11px;color:var(--muted);margin-bottom:20px}
+.wallet-action :global(*){font-family:Manrope,sans-serif}
+.wallet-action button{border-radius:12px!important;min-height:44px!important;font-weight:700!important}
+.address{width:100%;margin-top:13px;padding:10px 12px;border:1px solid #39433e;border-radius:10px;background:#101613;color:#dbe5dc;font:10px 'DM Mono',monospace;cursor:pointer}.address span{color:var(--lime);font-size:9px}
+.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 30px}.action{display:flex;flex-direction:column;align-items:flex-start;gap:5px;padding:14px 12px;border:1px solid var(--line);border-radius:15px;background:var(--panel);color:var(--text);text-align:left}.action:disabled{opacity:.48}.action-icon{display:grid;place-items:center;width:31px;height:31px;border-radius:10px;background:#222d26;color:var(--lime);font-size:18px;margin-bottom:4px}.action b{font-size:12px}.action small{font-size:9px;color:var(--muted)}
+.assets,.activity{margin-top:26px}.section-title{margin-bottom:12px}.section-title h2{font-size:16px;letter-spacing:-.4px;margin:0}.section-title span{font-size:8px}
+.asset-row{padding:14px 2px;border-bottom:1px solid var(--line);justify-content:flex-start;gap:12px}.coin{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;font-weight:800}.ton{background:#173c69;color:#7ebaff}.usdt{background:#123e32;color:#64d9a6}.asset-name,.asset-value{display:flex;flex-direction:column;gap:3px}.asset-name b,.asset-value b{font-size:12px}.asset-name small,.asset-value small{font-size:10px;color:var(--muted)}.asset-value{margin-left:auto;text-align:right}
+.empty{min-height:126px;border:1px dashed #2a3235;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;color:var(--muted)}.empty span{font-size:25px;color:#59645d}.empty b{font-size:12px;color:#d7ddd8}.empty small{font-size:10px}
+footer{border-top:1px solid var(--line);margin-top:34px;padding-top:18px;font-size:8px}.disclaimer{font-size:9px;color:#687277;line-height:1.5;text-align:center;margin:14px 10px 0}
+@media(min-width:600px){.shell{padding-top:34px}.hero{padding-top:58px}}
